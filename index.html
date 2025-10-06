@@ -4,59 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carol Xia</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #fafafa;
-    }
-    nav {
-      background-color: #222;
-      padding: 1em;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1em;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 700px;
-      margin: 3em auto;
-      text-align: center;
-      padding: 0 1em;
-    }
-    footer {
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      color: #555;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Contact</a>
-    <a href="#">Course Link</a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/journal.html">Journal</a></li>
+      <li><a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer">Course Link</a></li>
+    </ul>
   </nav>
 
-  <main>
+  <main id="main">
     <h1>Carol Xia</h1>
     <p>
-      I’m currently studying Integrated Innovation for Products & Services at 
-      Carnegie Mellon University. I’m passionate about product management and how 
-      AI can be used to design more human-centered products.
+      I’m currently studying Integrated Innovation for Products & Services at Carnegie Mellon University. 
+      I’m passionate about product management and how AI can be used to design more human-centered products.
     </p>
   </main>
 
@@ -65,7 +30,6 @@
   </footer>
 
   <script>
-    // Automatically display today's date in the footer
     const today = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     document.getElementById('date').textContent = today.toLocaleDateString(undefined, options);
