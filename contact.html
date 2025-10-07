@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Carol Xia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/journal.html">Journal</a></li>
+            <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Course Link</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <h1>Your Name</h1>
+        <p>You can reach me via email at <a href="mailto:carolx@andrew.cmu.edu">your.email@example.com</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-date"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
